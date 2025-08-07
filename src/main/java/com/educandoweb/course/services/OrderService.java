@@ -23,4 +23,8 @@ public class OrderService {
 		Optional<Order> obj = repository.findById(id);
 		return obj.get();
 	}
+	
+	public Order Insert(Order obj) {
+		return repository.save(obj);
+	}
 }
