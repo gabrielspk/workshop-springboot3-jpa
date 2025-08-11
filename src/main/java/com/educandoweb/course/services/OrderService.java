@@ -43,7 +43,6 @@ public class OrderService {
 			throw new DatabaseException(e.getMessage());
 		}
 	}
-	git
 	public Order update(Long id, Order obj) {
 		try {
 			Order entity = repository.getReferenceById(id);
